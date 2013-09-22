@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Class Apsis::KeyBindingRepository
+    </title>
+  </head>
+  <body>
+    <h1>
+      Apsis:: Class KeyBindingRepository
+    </h1>
+    <h2>
+      Source
+    </h2>
+    <p>
+      input/key_binding_repository.html
+    </p>
+    <h2>
+      Methods
+    </h2>
+    <ul>
+      <li>
+        registerEvent - Creates a new binding entry with the specified name and the given     defaults. Use NULL to specify no initial mapping. The parameter     event will be returned when a key is translated.
+      </li>
+      <li>
+        rebindPrimary - Rebinds a key combination to the primary binding of the given event.     The event must have been registered by registerEvent().
+      </li>
+      <li>
+        rebindSecondary - Rebinds a key combination to the secondary binding of the given     event. The event must have been registered by registerEvent().
+      </li>
+      <li>
+        yieldEvent - Determines the event identifier that corresponds to the given key   binding. Returns true if the binding was resolved.
+      </li>
+    </ul>
+  </body>
+</html>

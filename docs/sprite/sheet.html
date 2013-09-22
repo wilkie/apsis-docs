@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Class Apsis::Sprite::Sheet
+    </title>
+  </head>
+  <body>
+    <h1>
+      Apsis::Sprite:: Class Sheet
+    </h1>
+    <h2>
+      Source
+    </h2>
+    <p>
+      sprite/sheet.html
+    </p>
+    <h2>
+      Methods
+    </h2>
+    <ul>
+      <li>
+        load -
+      </li>
+      <li>
+        texture - Returns: The Texture for this SpriteSheet.
+      </li>
+      <li>
+        textureCoordinates - Fills the given coordinate array with the texture coordinates of the     given sprite. The sprite index is assigned by the order in which     sprites are listed in the description file.
+      </li>
+      <li>
+        textureCoordinates - Fills the given coordinate array with the texture coordinates of the     given sprite. The sprite is located by comparing the name given     with the one described by the description file.   Returns: true when the sprite is found, false otherwise.
+      </li>
+      <li>
+        count - Returns: the number of sprites contained in the sheet.
+      </li>
+      <li>
+        width - Returns the width of the sprite at the given index.
+      </li>
+      <li>
+        height - Returns the height of the sprite at the given index.
+      </li>
+      <li>
+        id - Returns the id of this sprite sheet in the system.
+      </li>
+      <li>
+        enumerateSprites - Returns: -1 when no more sprites match, or the index     of the next available sprite that matches the wildcard     given by name. For instance wildcard = "down_*" will yield     the next sprite after or including the index at last     that begins with "down_". Use last = 0 to start, and     then pass the return value + 1 in the next invocation.
+      </li>
+      <li>
+        draw - Draws the given sprite at the given location.
+      </li>
+    </ul>
+  </body>
+</html>

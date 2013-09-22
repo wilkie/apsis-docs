@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Class Apsis::Registry::Action
+    </title>
+  </head>
+  <body>
+    <h1>
+      Apsis::Registry:: Class Action
+    </h1>
+    <h2>
+      Source
+    </h2>
+    <p>
+      registry/action.html
+    </p>
+    <h2>
+      Methods
+    </h2>
+    <ul>
+      <li>
+        load - Loads a JSON bindings description that will load default bindings   for a set of actions.
+      </li>
+      <li>
+        id - Registers or returns the action for the given name.
+      </li>
+      <li>
+        id - Returns the Action by the given index.
+      </li>
+      <li>
+        count - Returns the number of actions in the system.
+      </li>
+      <li>
+        yield - Yields the action triggered by the given key binding. Returns true   when a binding yields an event. In this case, action_id will be set   to the id of the action.
+      </li>
+      <li>
+        bindPrimary - Binds the given key binding as the primary means of activating this   action.
+      </li>
+      <li>
+        bindSecondary - Binds the given key binding as the secondary means of activating this   action.
+      </li>
+      <li>
+        primary - Returns the primary key binding for this action.
+      </li>
+      <li>
+        secondary - Returns the secondary key binding for this action. If there is no   primary, this will actually set the primary binding.
+      </li>
+      <li>
+        bindingCount - Returns the number of bindings that will trigger this action.
+      </li>
+      <li>
+        clearPrimary - Clears the primary binding for this action.
+      </li>
+      <li>
+        clearSecondary - Clears the secondary binding for this action.
+      </li>
+      <li>
+        clear - Clears all bindings for this action.
+      </li>
+      <li>
+        id - Returns the unique identifier for this Action within the system.
+      </li>
+    </ul>
+  </body>
+</html>
