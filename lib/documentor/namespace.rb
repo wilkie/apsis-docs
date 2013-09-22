@@ -15,5 +15,10 @@ module Documentor
       @comment    = options[:comment]
       @file       = options[:file]
     end
+
+    def safe_path_from_module_name(prefix)
+      full_name = "#{prefix}#{@name}"
+      full_name.gsub /\:\:/, "/"
+    end
   end
 end

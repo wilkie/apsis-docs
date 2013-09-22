@@ -7,7 +7,7 @@
   %ul
     - namespaces.each do |namespace|
       %li
-        %a{:src => "#{file_prefix}_#{namespace.name}"}
+        %a{:src => "#{file_prefix}namespaces/#{namespace.safe_path_from_module_name("#{prefix}#{name}::")}.html"}
           #{namespace.name} - #{namespace.comment}
 
 - unless classes.empty?

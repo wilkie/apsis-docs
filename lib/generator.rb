@@ -8,18 +8,18 @@ class Generator
   end
 
   def output(to, root, prefix = "")
-    output_file = root.file
-    if output_file
-      output_file = output_file.gsub(/#{Regexp.escape(File.extname(output_file))}$/, ".html")
-      output_dir = File.dirname(output_file)
-      FileUtils::mkdir_p "#{to}/#{output_dir}"
-    end
-
     case root
     when Documentor::Root
       root.namespaces.each{|e| output(to, e, "#{prefix}")}
       root.classes.each{|e| output(to, e, prefix)}
     when Documentor::Class
+      output_file = root.file
+      if output_file
+        output_file = output_file.gsub(/#{Regexp.escape(File.extname(output_file))}$/, ".html")
+        output_dir = File.dirname(output_file)
+        FileUtils::mkdir_p "#{to}/#{output_dir}"
+      end
+
       root.namespaces.each{|e| output(to, e, "#{prefix}")}
       root.classes.each{|e| output(to, e, prefix)}
 
@@ -59,10 +59,10 @@ class Generator
                 end
 
 
-      if output_file
-        File.open("#{to}/_#{root.name}.html", "w+") do |file|
-          file.write content
-        end
+      path = root.safe_path_from_module_name(prefix)
+      FileUtils.mkdir_p "#{to}/namespaces/#{path}"
+      File.open("#{to}/namespaces/#{path}.html", "w+") do |file|
+        file.write content
       end
     when Documentor::Function
     end
