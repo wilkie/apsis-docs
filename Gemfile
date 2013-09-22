@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'debugger'
-gem 'ffi-clang', :path => "~/ffi-clang"
+gem 'ffi-clang', :git => "https://github.com/wilkie/ffi-clang"
 gem 'haml'
 gem 'tilt'
