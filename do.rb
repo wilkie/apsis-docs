@@ -8,7 +8,18 @@ collection = Documentor::Collector.new
 
 collection.path("../apsis/include/apsis", "h")
 
-generator = Generator.new(:layout => "views/layout.haml",
-                          :class  => "views/class.haml")
+generator = Generator.new(:layout    => "views/layout.haml",
+                          :class     => "views/class.haml",
+                          :namespace => "views/namespace.haml")
 
 generator.output "docs", collection.root
+
+markdown = File.open("index.md").read
+
+content = Tilt.new("views/layout.haml").render(nil, :title => "Apsis Project") do
+  Tilt.new("views/index.haml").render(nil, :content => markdown)
+end
+
+File.open("index.html", "w+") do |file|
+  file.write content
+end
