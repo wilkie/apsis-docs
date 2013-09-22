@@ -7,7 +7,8 @@
   %ul
     - namespaces.each do |namespace|
       %li
-        #{namespace.name}
+        %a{:src => "#{file_prefix}_#{namespace.name}"}
+          #{namespace.name} - #{namespace.comment}
 
 - unless classes.empty?
   %h2
@@ -15,7 +16,8 @@
   %ul
     - classes.each do |klass|
       %li
-        #{klass.name}
+        %a{:src => "#{file_prefix}#{klass.file.gsub(/#{Regexp.escape(File.extname(klass.file))}$/, ".html")}"}
+          #{klass.name} - #{klass.comment}
 
 - unless functions.empty?
   %h2
@@ -23,4 +25,4 @@
   %ul
     - functions.each do |function|
       %li
-        #{function.name}
+        #{function.name} - #{function.comment}

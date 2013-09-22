@@ -10,7 +10,7 @@ class Generator
   def output(to, root, prefix = "")
     output_file = root.file
     if output_file
-      output_file.gsub!(/#{Regexp.escape(File.extname(output_file))}$/, ".html")
+      output_file = output_file.gsub(/#{Regexp.escape(File.extname(output_file))}$/, ".html")
       output_dir = File.dirname(output_file)
       FileUtils::mkdir_p "#{to}/#{output_dir}"
     end
@@ -24,6 +24,7 @@ class Generator
       root.classes.each{|e| output(to, e, prefix)}
 
       class_content = @class.render(root, :prefix => prefix,
+                                          :file_prefix => "/docs/",
                                           :name => root.name,
                                           :file => root.file,
                                           :comment => root.comment,
@@ -42,9 +43,10 @@ class Generator
       end
     when Documentor::Namespace
       root.namespaces.each{|e| output(to, e, "#{prefix}#{root.name}::")}
-      root.classes.each{|e| output(to, e, "#{prefix}#{root.name}")}
+      root.classes.each{|e| output(to, e, "#{prefix}#{root.name}::")}
 
       namespace_content = @namespace.render(root, :prefix => prefix,
+                                                  :file_prefix => "/docs/",
                                                   :name => root.name,
                                                   :file => root.file,
                                                   :comment => root.comment,
