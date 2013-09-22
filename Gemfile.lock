@@ -1,0 +1,29 @@
+PATH
+  remote: ~/ffi-clang
+  specs:
+    ffi-clang (0.1.3)
+      ffi
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    columnize (0.3.6)
+    debugger (1.6.0)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.2.0)
+      debugger-ruby_core_source (~> 1.2.1)
+    debugger-linecache (1.2.0)
+    debugger-ruby_core_source (1.2.3)
+    ffi (1.9.0)
+    haml (4.0.3)
+      tilt
+    tilt (1.4.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  debugger
+  ffi-clang!
+  haml
+  tilt

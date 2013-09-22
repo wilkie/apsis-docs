@@ -1,0 +1,32 @@
+%h1
+  #{prefix} Class #{name}
+
+%h2
+  Source
+
+%p
+  #{file}
+
+- unless namespaces.empty?
+  %h2
+    Namespaces
+  %ul
+    - namespaces.each do |namespace|
+      %li
+        #{namespace.name} - #{namespace.comment}
+
+- unless classes.empty?
+  %h2
+    Classes
+  %ul
+    - classes.each do |klass|
+      %li
+        #{klass.name} - #{klass.comment}
+
+- unless functions.empty?
+  %h2
+    Methods
+  %ul
+    - functions.each do |function|
+      %li
+        #{function.name} - #{function.comment}
