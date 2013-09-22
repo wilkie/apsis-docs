@@ -24,7 +24,7 @@ class Generator
       root.classes.each{|e| output(to, e, prefix)}
 
       class_content = @class.render(root, :prefix => prefix,
-                                          :file_prefix => "/docs/",
+                                          :file_prefix => "/apsis-docs/docs/",
                                           :name => root.name,
                                           :file => root.file,
                                           :comment => root.comment,
@@ -46,7 +46,7 @@ class Generator
       root.classes.each{|e| output(to, e, "#{prefix}#{root.name}::")}
 
       namespace_content = @namespace.render(root, :prefix => prefix,
-                                                  :file_prefix => "/docs/",
+                                                  :file_prefix => "/apsis-docs/docs/",
                                                   :name => root.name,
                                                   :file => root.file,
                                                   :comment => root.comment,
