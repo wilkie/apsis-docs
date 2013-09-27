@@ -1,34 +1,38 @@
-%h1
+%h1#class
   #{prefix} Class #{name}
 
-%h2
+%h2#source
   Source
 
-%p
+%p.source
   #{file}
 
 - unless namespaces.empty?
-  %h2
+  %h2#namespaces
     Namespaces
-  %ul
+  %ul.namespaces
     - namespaces.each do |namespace|
-      %li
+      %li.namespace
         %a{:href => "#{file_prefix}_#{namespace.name}"}
           #{namespace.name} - #{namespace.comment}
 
 - unless classes.empty?
-  %h2
+  %h2#classes
     Classes
-  %ul
+  %ul.classes
     - classes.each do |klass|
-      %li
+      %li.class
         %a{:href => "#{file_prefix}#{klass.file.gsub(/#{Regexp.escape(File.extname(klass.file))}$/, ".html")}"}
           #{klass.name} - #{klass.comment}
 
 - unless functions.empty?
-  %h2
+  %h2#functions
     Methods
-  %ul
+  %ul.functions
     - functions.each do |function|
-      %li
+      %li.function
+        %ul.parameters
+          - function.parameters.each do |parameter|
+            %li.parameter
+              #{parameter.name}
         #{function.name} - #{function.comment}

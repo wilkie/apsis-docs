@@ -1,6 +1,7 @@
 require_relative 'class'
 require_relative 'function'
 require_relative 'namespace'
+require_relative 'parameter'
 require_relative 'root'
 
 module Documentor
@@ -36,6 +37,7 @@ module Documentor
       namespaces = []
       classes    = []
       functions  = []
+      parameters = []
 
       # Rake the comments
       comment = nil
@@ -76,6 +78,18 @@ module Documentor
                when :cursor_class_decl
                  Documentor::Class
                when :cursor_cxx_method
+                 # Retrieve arguments
+                 parameters = cursor.arguments.map do |arg_cursor|
+                   arg_comment = nil
+                   if arg_cursor.comment.kind != :comment_null
+                     arg_comment = arg_cursor.comment.child(0).text.gsub("\n", " ").strip
+                   end
+                   Documentor::Parameter.new(:name    => arg_cursor.spelling,
+                                             :file    => @relative_path,
+                                             :comment => arg_comment)
+                 end
+
+                 # Create a Function
                  Documentor::Function
                else
                  nil
@@ -88,6 +102,7 @@ module Documentor
                    :namespaces => namespaces,
                    :classes    => classes,
                    :functions  => functions,
+                   :parameters => parameters,
                    :file       => @relative_path)
       end
     end
