@@ -14,7 +14,9 @@
     - namespaces.each do |namespace|
       %li.namespace
         %a{:href => "#{file_prefix}_#{namespace.name}"}
-          #{namespace.name} - #{namespace.comment}
+          #{namespace.name}
+        %p.description
+          #{namespace.comment}
 
 - unless classes.empty?
   %h2#classes
@@ -23,7 +25,9 @@
     - classes.each do |klass|
       %li.class
         %a{:href => "#{file_prefix}#{klass.file.gsub(/#{Regexp.escape(File.extname(klass.file))}$/, ".html")}"}
-          #{klass.name} - #{klass.comment}
+          #{klass.name}
+        %p.description
+          #{klass.comment}
 
 - unless functions.empty?
   %h2#functions
@@ -35,4 +39,7 @@
           - function.parameters.each do |parameter|
             %li.parameter
               #{parameter.name}
-        #{function.name} - #{function.comment}
+        %p.name
+          #{function.name}
+        %p.description
+          #{function.comment}
