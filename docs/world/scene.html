@@ -6,56 +6,136 @@
     </title>
   </head>
   <body>
-    <h1>
+    <h1 id='class'>
       Apsis::World:: Class Scene
     </h1>
-    <h2>
+    <h2 id='source'>
       Source
     </h2>
-    <p>
+    <p class='source'>
       world/scene.h
     </p>
-    <h2>
+    <h2 id='functions'>
       Methods
     </h2>
-    <ul>
-      <li>
+    <ul class='functions'>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            path
+          </li>
+        </ul>
         load - Loads a Scene from a JSON description.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            scene
+          </li>
+        </ul>
         instantiate - Loads a Scene from an existing Scene object.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            map
+          </li>
+        </ul>
         addMap - Adds a Map to the scene.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            id
+          </li>
+          <li class='parameter'>
+            x
+          </li>
+          <li class='parameter'>
+            y
+          </li>
+        </ul>
         addActor - Instantiates an Actor to the scene using a Thing id.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            thing
+          </li>
+          <li class='parameter'>
+            x
+          </li>
+          <li class='parameter'>
+            y
+          </li>
+        </ul>
         addActor - Instantiates an Actor to the scene by cloning the given Thing.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            index
+          </li>
+        </ul>
         actor - Returns the Actor given by its index in the scene.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            index
+          </li>
+        </ul>
         actor -
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         actorCount - Returns the number of actors currently in the scene.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         mapCount - Returns the number of maps currently in the scene.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            index
+          </li>
+        </ul>
         map - Returns the map given by its index in the scene.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            elapsed
+          </li>
+        </ul>
         update - Updates objects in the scene.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            action_id
+          </li>
+          <li class='parameter'>
+            held
+          </li>
+        </ul>
         act - Reacts to an input action.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            projection
+          </li>
+          <li class='parameter'>
+            camera
+          </li>
+          <li class='parameter'>
+            model
+          </li>
+        </ul>
         draw - Draws the scene.
       </li>
     </ul>

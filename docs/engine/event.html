@@ -6,32 +6,51 @@
     </title>
   </head>
   <body>
-    <h1>
+    <h1 id='class'>
       Apsis::Engine:: Class Event
     </h1>
-    <h2>
+    <h2 id='source'>
       Source
     </h2>
-    <p>
+    <p class='source'>
       engine/event.h
     </p>
-    <h2>
+    <h2 id='functions'>
       Methods
     </h2>
-    <ul>
-      <li>
+    <ul class='functions'>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         type - The type of event.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         systemEvent - Returns the system event identifier.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            value
+          </li>
+        </ul>
         systemEvent - Sets the system event. Also will set type to refer to such an   event.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         binding - Returns the key binding associated with this event.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            binding
+          </li>
+          <li class='parameter'>
+            pressed
+          </li>
+        </ul>
         binding - Sets the event data to that of the given key binding. Will also set   type to indicate the event is a key binding depending on whether it   has been indicated that the key was pressed or released.
       </li>
     </ul>

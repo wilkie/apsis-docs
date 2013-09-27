@@ -6,38 +6,100 @@
     </title>
   </head>
   <body>
-    <h1>
+    <h1 id='class'>
       Apsis::World:: Class RuleSet
     </h1>
-    <h2>
+    <h2 id='source'>
       Source
     </h2>
-    <p>
+    <p class='source'>
       world/rule_set.h
     </p>
-    <h2>
+    <h2 id='functions'>
       Methods
     </h2>
-    <ul>
-      <li>
+    <ul class='functions'>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            rule
+          </li>
+        </ul>
         addRule - Adds the given rule to this rule set.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         count - Returns the number of rules in this set.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            id
+          </li>
+        </ul>
         rule - Returns the rule at the given index in this set.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            elapsed
+          </li>
+          <li class='parameter'>
+            object
+          </li>
+          <li class='parameter'>
+            scene
+          </li>
+        </ul>
         update - Updates the given object from the given scene.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            scene
+          </li>
+          <li class='parameter'>
+            object
+          </li>
+          <li class='parameter'>
+            original
+          </li>
+          <li class='parameter'>
+            intended
+          </li>
+        </ul>
         collide - Checks collisions of the given object within the given scene.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            action_id
+          </li>
+          <li class='parameter'>
+            held
+          </li>
+          <li class='parameter'>
+            object
+          </li>
+          <li class='parameter'>
+            scene
+          </li>
+        </ul>
         act - Updates objects that react to a particular input action.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            event_id
+          </li>
+          <li class='parameter'>
+            object
+          </li>
+          <li class='parameter'>
+            scene
+          </li>
+        </ul>
         respond - Responds to the given event.
       </li>
     </ul>

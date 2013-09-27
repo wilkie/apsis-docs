@@ -6,53 +6,110 @@
     </title>
   </head>
   <body>
-    <h1>
+    <h1 id='class'>
       Apsis::World:: Class Actor
     </h1>
-    <h2>
+    <h2 id='source'>
       Source
     </h2>
-    <p>
+    <p class='source'>
       world/actor.h
     </p>
-    <h2>
+    <h2 id='functions'>
       Methods
     </h2>
-    <ul>
-      <li>
+    <ul class='functions'>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         sheet - Return: the Apsis::Sprite::Sheet for the Apsis::Sprite.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         position - Return: the Apsis::Geometry::Rectangle for the Apsis::Sprite.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            animationName
+          </li>
+        </ul>
         animate - Sets the current animation to be played by this Apsis::Sprite.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         nextFrame - Advances the frame to the next sprite.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            scene
+          </li>
+          <li class='parameter'>
+            elapsed
+          </li>
+        </ul>
         update - Updates the current time for the Sprite. Affects animations and movements.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            scene
+          </li>
+          <li class='parameter'>
+            action_id
+          </li>
+          <li class='parameter'>
+            held
+          </li>
+        </ul>
         act - Reacts to an input action.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            scene
+          </li>
+        </ul>
         collide - Responds to collisions.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            rule
+          </li>
+        </ul>
         attachRule - Adds the given rule to the actor's rule set.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            projection
+          </li>
+          <li class='parameter'>
+            camera
+          </li>
+        </ul>
         draw - Draws the actor.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         name - Returns the name of this Actor.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            scene
+          </li>
+        </ul>
         respond - Responds to events.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         object - Returns an immutable reference to the Actor's World::Object.
       </li>
     </ul>

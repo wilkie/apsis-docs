@@ -6,47 +6,106 @@
     </title>
   </head>
   <body>
-    <h1>
+    <h1 id='class'>
       Apsis::Sprite:: Class Sheet
     </h1>
-    <h2>
+    <h2 id='source'>
       Source
     </h2>
-    <p>
+    <p class='source'>
       sprite/sheet.h
     </p>
-    <h2>
+    <h2 id='functions'>
       Methods
     </h2>
-    <ul>
-      <li>
+    <ul class='functions'>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            filename
+          </li>
+        </ul>
         load -
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         texture - Returns: The Texture for this SpriteSheet.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            index
+          </li>
+          <li class='parameter'>
+            coords
+          </li>
+        </ul>
         textureCoordinates - Fills the given coordinate array with the texture coordinates of the     given sprite. The sprite index is assigned by the order in which     sprites are listed in the description file.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            name
+          </li>
+          <li class='parameter'>
+            coords
+          </li>
+        </ul>
         textureCoordinates - Fills the given coordinate array with the texture coordinates of the     given sprite. The sprite is located by comparing the name given     with the one described by the description file.   Returns: true when the sprite is found, false otherwise.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         count - Returns: the number of sprites contained in the sheet.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            index
+          </li>
+        </ul>
         width - Returns the width of the sprite at the given index.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            index
+          </li>
+        </ul>
         height - Returns the height of the sprite at the given index.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         id - Returns the id of this sprite sheet in the system.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            wildcard
+          </li>
+          <li class='parameter'>
+            last
+          </li>
+        </ul>
         enumerateSprites - Returns: -1 when no more sprites match, or the index     of the next available sprite that matches the wildcard     given by name. For instance wildcard = "down_*" will yield     the next sprite after or including the index at last     that begins with "down_". Use last = 0 to start, and     then pass the return value + 1 in the next invocation.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            index
+          </li>
+          <li class='parameter'>
+            projection
+          </li>
+          <li class='parameter'>
+            camera
+          </li>
+          <li class='parameter'>
+            model
+          </li>
+        </ul>
         draw - Draws the given sprite at the given location.
       </li>
     </ul>

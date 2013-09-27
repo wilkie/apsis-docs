@@ -6,29 +6,67 @@
     </title>
   </head>
   <body>
-    <h1>
+    <h1 id='class'>
       Apsis:: Class KeyBindingRepository
     </h1>
-    <h2>
+    <h2 id='source'>
       Source
     </h2>
-    <p>
+    <p class='source'>
       input/key_binding_repository.h
     </p>
-    <h2>
+    <h2 id='functions'>
       Methods
     </h2>
-    <ul>
-      <li>
+    <ul class='functions'>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            name
+          </li>
+          <li class='parameter'>
+            event
+          </li>
+          <li class='parameter'>
+            primary
+          </li>
+          <li class='parameter'>
+            secondary
+          </li>
+        </ul>
         registerEvent - Creates a new binding entry with the specified name and the given     defaults. Use NULL to specify no initial mapping. The parameter     event will be returned when a key is translated.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            name
+          </li>
+          <li class='parameter'>
+            primary
+          </li>
+        </ul>
         rebindPrimary - Rebinds a key combination to the primary binding of the given event.     The event must have been registered by registerEvent().
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            name
+          </li>
+          <li class='parameter'>
+            secondary
+          </li>
+        </ul>
         rebindSecondary - Rebinds a key combination to the secondary binding of the given     event. The event must have been registered by registerEvent().
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            binding
+          </li>
+          <li class='parameter'>
+            event
+          </li>
+        </ul>
         yieldEvent - Determines the event identifier that corresponds to the given key   binding. Returns true if the binding was resolved.
       </li>
     </ul>

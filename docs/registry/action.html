@@ -6,59 +6,108 @@
     </title>
   </head>
   <body>
-    <h1>
+    <h1 id='class'>
       Apsis::Registry:: Class Action
     </h1>
-    <h2>
+    <h2 id='source'>
       Source
     </h2>
-    <p>
+    <p class='source'>
       registry/action.h
     </p>
-    <h2>
+    <h2 id='functions'>
       Methods
     </h2>
-    <ul>
-      <li>
+    <ul class='functions'>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            path
+          </li>
+        </ul>
         load - Loads a JSON bindings description that will load default bindings   for a set of actions.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            name
+          </li>
+        </ul>
         id - Registers or returns the action for the given name.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            id
+          </li>
+        </ul>
         id - Returns the Action by the given index.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         count - Returns the number of actions in the system.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            binding
+          </li>
+          <li class='parameter'>
+            action_id
+          </li>
+        </ul>
         yield - Yields the action triggered by the given key binding. Returns true   when a binding yields an event. In this case, action_id will be set   to the id of the action.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            binding
+          </li>
+        </ul>
         bindPrimary - Binds the given key binding as the primary means of activating this   action.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+          <li class='parameter'>
+            binding
+          </li>
+        </ul>
         bindSecondary - Binds the given key binding as the secondary means of activating this   action.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         primary - Returns the primary key binding for this action.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         secondary - Returns the secondary key binding for this action. If there is no   primary, this will actually set the primary binding.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         bindingCount - Returns the number of bindings that will trigger this action.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         clearPrimary - Clears the primary binding for this action.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         clearSecondary - Clears the secondary binding for this action.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         clear - Clears all bindings for this action.
       </li>
-      <li>
+      <li class='function'>
+        <ul class='parameters'>
+        </ul>
         id - Returns the unique identifier for this Action within the system.
       </li>
     </ul>
