@@ -136,10 +136,12 @@ ul.functions > li > h3.parameters_header {
 ul.parameters {
   margin-top: 5px;
   margin-left: 10px;
+  display: table;
 }
 
 li.parameter {
   margin-top: 5px;
+  display: table-row;
 }
 
 li.parameter > h3 {
@@ -147,10 +149,27 @@ li.parameter > h3 {
 }
 
 li.parameter > p {
-  display: inline-block;
+  display: table-cell;
 }
 
 li.parameter > p.name {
   text-align: right;
-  width: 100px;
+  padding-right: 5px;
+}
+
+li.parameter > p.type {
+  padding-right: 5px;
+}
+
+li.parameter > p.description {
+  width: 100%;
+}
+
+li.parameter > p.default {
+  display: none;
+}
+
+p.no_parameters {
+  margin-left: 10px;
+  margin-top: 5px;
 }
