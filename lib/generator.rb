@@ -9,11 +9,14 @@ class Generator
 
   def partial(page, options = {})
     Tilt.new("views/_#{page}.haml").render(self, options[:locals].merge(
+                                                   :prefix      => @prefix,
                                                    :file_prefix => "/apsis-docs/docs/"
                                                  ))
   end
 
   def output(to, root, prefix = "")
+    @prefix = prefix
+
     case root
     when Documentor::Root
       root.namespaces.each{|e| output(to, e, "#{prefix}")}
