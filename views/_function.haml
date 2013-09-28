@@ -9,6 +9,9 @@
     #{function.comment}
   %h3.parameters_header
     Parameters
+  - if function.parameters.empty?
+    %p.no_parameters
+      None
   %ul.parameters
     - function.parameters.each do |parameter|
       %li.parameter
