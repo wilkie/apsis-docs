@@ -21,7 +21,7 @@ h3 {
   font-size: 16px;
 }
 
-p {
+p, a {
   font-family: 'News Cycle', times;
   font-size: 16px;
 }
@@ -83,6 +83,11 @@ ul.namespaces > li {
   padding-bottom: 20px;
 }
 
+ul.namespaces > li > h3.name_header,
+ul.namespaces > li > h3.description_header {
+  display: none;
+}
+
 /* CLASSES SECTION */
 
 h2#classes {
@@ -95,6 +100,11 @@ ul.classes > li {
   padding: 5px;
   background-color: #eee;
   padding-bottom: 20px;
+}
+
+ul.classes > li > h3.name_header,
+ul.classes > li > h3.description_header {
+  display: none;
 }
 
 /* FUNCTIONS SECTION */
