@@ -12,4 +12,19 @@
   %ul.parameters
     - function.parameters.each do |parameter|
       %li.parameter
-        #{parameter.name}
+        %h3.name_header
+          Name
+        %p.name
+          #{parameter.name}
+        %h3.description_header
+          Description
+        %p.description
+          Meh
+        %h3.type_header
+          Type
+        %p.type
+          int
+        %h3.default
+          Default
+        %p.default
+          default
