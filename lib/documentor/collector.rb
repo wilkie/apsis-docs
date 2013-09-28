@@ -10,9 +10,13 @@ module Documentor
 
     def path(path, extension)
       Dir.glob("#{path}/**/*.#{extension}").each do |file|
-        root = parse(file, path)
-        add root
+        parseAndAdd(file, path)
       end
+    end
+
+    def parseAndAdd(filename, path)
+      root = parse(filename, path)
+      add root
     end
 
     def parse(filename, path)

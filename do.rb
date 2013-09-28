@@ -7,6 +7,7 @@ require_relative 'lib/generator'
 collection = Documentor::Collector.new
 
 collection.path("../apsis/include/apsis", "h")
+collection.parseAndAdd("../apsis/include/apsis.h", "../apsis/include/apsis")
 
 generator = Generator.new(:layout    => "views/layout.haml",
                           :class     => "views/class.haml",
