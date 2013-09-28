@@ -1,5 +1,9 @@
 %li.class
-  %a{:href => "#{file_prefix}#{klass.file.gsub(/#{Regexp.escape(File.extname(klass.file))}$/, ".html")}"}
+  %h3.name_header
+    Name
+  %a.name{:href => "#{file_prefix}#{klass.file.gsub(/#{Regexp.escape(File.extname(klass.file))}$/, ".html")}"}
     #{klass.name}
+  %h3.description_header
+    Description
   %p.description
     #{klass.comment}

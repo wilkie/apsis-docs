@@ -1,5 +1,9 @@
 %li.namespace
-  %a{:href => "#{file_prefix}namespaces/#{prefix.gsub(/\:\:/, "_").gsub(/_$/,"")}/#{namespace.name}.html"}
+  %h3.name_header
+    Name
+  %a.name{:href => "#{file_prefix}namespaces/#{prefix.gsub(/\:\:/, "_").gsub(/_$/,"")}/#{namespace.name}.html"}
     #{namespace.name}
+  %h3.description_header
+    Description
   %p.description
     #{namespace.comment}
