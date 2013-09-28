@@ -115,7 +115,7 @@ h3.name_header {
   display:none;
 }
 
-li.function p.name {
+li.function > p.name {
   color: green;
   font-size: 18px;
 }
@@ -138,6 +138,19 @@ ul.parameters {
   margin-left: 10px;
 }
 
-ul.parameters > li {
+li.parameter {
   margin-top: 5px;
+}
+
+li.parameter > h3 {
+  display:none;
+}
+
+li.parameter > p {
+  display: inline-block;
+}
+
+li.parameter > p.name {
+  text-align: right;
+  width: 100px;
 }
