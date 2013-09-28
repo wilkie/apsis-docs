@@ -12,34 +12,18 @@
     Namespaces
   %ul.namespaces
     - namespaces.each do |namespace|
-      %li.namespace
-        %a{:href => "#{file_prefix}_#{namespace.name}"}
-          #{namespace.name}
-        %p.description
-          #{namespace.comment}
+      = partial :namespace, :locals => {:namespace => namespace}
 
 - unless classes.empty?
   %h2#classes
     Classes
   %ul.classes
     - classes.each do |klass|
-      %li.class
-        %a{:href => "#{file_prefix}#{klass.file.gsub(/#{Regexp.escape(File.extname(klass.file))}$/, ".html")}"}
-          #{klass.name}
-        %p.description
-          #{klass.comment}
+      = partial :class, :locals => {:klass => klass}
 
 - unless functions.empty?
   %h2#functions
     Methods
   %ul.functions
     - functions.each do |function|
-      %li.function
-        %ul.parameters
-          - function.parameters.each do |parameter|
-            %li.parameter
-              #{parameter.name}
-        %p.name
-          #{function.name}
-        %p.description
-          #{function.comment}
+      = partial :function, :locals => {:function => function}

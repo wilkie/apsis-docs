@@ -7,6 +7,12 @@ class Generator
     @namespace = Tilt.new(options[:namespace])
   end
 
+  def partial(page, options = {})
+    Tilt.new("views/_#{page}.haml").render(self, options[:locals].merge(
+                                                   :file_prefix => "/apsis-docs/docs/"
+                                                 ))
+  end
+
   def output(to, root, prefix = "")
     case root
     when Documentor::Root
@@ -23,7 +29,7 @@ class Generator
       root.namespaces.each{|e| output(to, e, "#{prefix}")}
       root.classes.each{|e| output(to, e, prefix)}
 
-      class_content = @class.render(root, :prefix => prefix,
+      class_content = @class.render(self, :prefix => prefix,
                                           :file_prefix => "/apsis-docs/docs/",
                                           :name => root.name,
                                           :file => root.file,
@@ -32,7 +38,7 @@ class Generator
                                           :classes => root.classes,
                                           :functions => root.functions)
 
-      content = @layout.render(root, :title => "Class #{prefix}#{root.name}") do
+      content = @layout.render(self, :title => "Class #{prefix}#{root.name}") do
                   class_content
                 end
 
@@ -45,7 +51,7 @@ class Generator
       root.namespaces.each{|e| output(to, e, "#{prefix}#{root.name}::")}
       root.classes.each{|e| output(to, e, "#{prefix}#{root.name}::")}
 
-      namespace_content = @namespace.render(root, :prefix => prefix,
+      namespace_content = @namespace.render(self, :prefix => prefix,
                                                   :file_prefix => "/apsis-docs/docs/",
                                                   :name => root.name,
                                                   :file => root.file,
@@ -54,7 +60,7 @@ class Generator
                                                   :classes => root.classes,
                                                   :functions => root.functions)
 
-      content = @layout.render(root, :title => "Namespace #{prefix}#{root.name}") do
+      content = @layout.render(self, :title => "Namespace #{prefix}#{root.name}") do
                   namespace_content
                 end
 

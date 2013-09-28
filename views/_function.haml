@@ -1,0 +1,15 @@
+%li.function
+  %h3.name_header
+    Name
+  %p.name
+    #{function.name}
+  %h3.description_header
+    Description
+  %p.description
+    #{function.comment}
+  %h3.parameters_header
+    Parameters
+  %ul.parameters
+    - function.parameters.each do |parameter|
+      %li.parameter
+        #{parameter.name}

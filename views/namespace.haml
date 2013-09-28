@@ -4,32 +4,20 @@
 - unless namespaces.empty?
   %h2#namespaces
     Namespaces
-  %ul
+  %ul.namespaces
     - namespaces.each do |namespace|
-      %li
-        %a{:href => "#{file_prefix}namespaces/#{namespace.safe_path_from_module_name("#{prefix}#{name}::")}.html"}
-          #{namespace.name}
-        %p.description
-          #{namespace.comment}
+      = partial :namespace, :locals => {:namespace => namespace}
 
 - unless classes.empty?
   %h2#classes
     Classes
-  %ul.namespaces
+  %ul.classes
     - classes.each do |klass|
-      %li.namespace
-        %a{:href => "#{file_prefix}#{klass.file.gsub(/#{Regexp.escape(File.extname(klass.file))}$/, ".html")}"}
-          #{klass.name}
-        %p.description
-          #{klass.comment}
+      = partial :class, :locals => {:klass => klass}
 
 - unless functions.empty?
   %h2#functions
     Methods
   %ul.functions
     - functions.each do |function|
-      %li.function
-        %p.name
-          #{function.name}
-        %p.description
-          #{function.comment}
+      = partial :function, :locals => {:function => function}
