@@ -1,7 +1,7 @@
 %li.namespace
   %h3.name_header
     Name
-  %a.name{:href => "#{file_prefix}namespaces/#{prefix.gsub(/\:\:/, "_").gsub(/_$/,"")}/#{namespace.name}.html"}
+  %a.name{:href => "#{file_prefix}namespaces/#{namespace.safe_path_from_module_name(prefix)}.html"}
     #{namespace.name}
   %h3.description_header
     Description

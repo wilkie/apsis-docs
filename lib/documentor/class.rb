@@ -15,5 +15,14 @@ module Documentor
       @comment    = options[:comment]
       @file       = options[:file]
     end
+
+    def <=>(b)
+      case b
+      when Documentor::Class
+        self.name <=> b.name
+      else
+        super(b)
+      end
+    end
   end
 end

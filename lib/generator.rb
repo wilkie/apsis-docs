@@ -37,9 +37,9 @@ class Generator
                                           :name => root.name,
                                           :file => root.file,
                                           :comment => root.comment,
-                                          :namespaces => root.namespaces,
-                                          :classes => root.classes,
-                                          :functions => root.functions)
+                                          :namespaces => root.namespaces.sort,
+                                          :classes => root.classes.sort,
+                                          :functions => root.functions.sort)
 
       content = @layout.render(self, :title => "Class #{prefix}#{root.name}") do
                   class_content
@@ -59,9 +59,9 @@ class Generator
                                                   :name => root.name,
                                                   :file => root.file,
                                                   :comment => root.comment,
-                                                  :namespaces => root.namespaces,
-                                                  :classes => root.classes,
-                                                  :functions => root.functions)
+                                                  :namespaces => root.namespaces.sort,
+                                                  :classes => root.classes.sort,
+                                                  :functions => root.functions.sort)
 
       content = @layout.render(self, :title => "Namespace #{prefix}#{root.name}") do
                   namespace_content

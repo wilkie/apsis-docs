@@ -16,6 +16,15 @@ module Documentor
       @file       = options[:file]
     end
 
+    def <=>(b)
+      case b
+      when Documentor::Namespace
+        self.name <=> b.name
+      else
+        super(b)
+      end
+    end
+
     def safe_path_from_module_name(prefix)
       full_name = "#{prefix}#{@name}"
       full_name.gsub /\:\:/, "/"
