@@ -26,13 +26,62 @@ p {
   font-size: 16px;
 }
 
-h2#classes {
+/* HEADER */
+
+h1 span.prefix {
+  display: block;
+  color: #888;
+  font-size: 16px;
+}
+
+h1 span.name {
+  padding-left: 8px;
+}
+
+h1#class span.name:after {
+  content: 'Class';
   color: red;
 }
+
+h1#namespace span.name:after {
+  content: 'Namespace';
+  color: blue;
+}
+
+/* SOURCE FIELD */
+
+h2#source {
+  color: purple;
+  float: left;
+  margin-right: 5px;
+}
+
+h2#source:after {
+  content: ':'
+}
+
+h2#source + p.source {
+  display:block;
+  padding-top: 16px;
+}
+
+p.source + * {
+  clear: both;
+}
+
+/* NAMESPACES SECTION */
 
 h2#namespaces {
   color: blue;
 }
+
+/* CLASSES SECTION */
+
+h2#classes {
+  color: red;
+}
+
+/* FUNCTIONS SECTION */
 
 h2#functions {
   color: green;
@@ -43,7 +92,7 @@ h2 + ul {
   margin-left: 10px;
 }
 
-ul li {
+ul.functions > li {
   border: 1px solid #888;
   border-radius: 5px;
   margin-top: 11px;
@@ -52,29 +101,37 @@ ul li {
   box-shadow: 0px 0px 3px 0px #888;
 }
 
+ul.functions > li > h3 {
+  margin-top: 10px;
+}
+
+ul.functions > li > h3.description_header {
+  display: none;
+}
+
+ul.functions > li > p.description {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+ul.functions > li > h3.parameters_header {
+  margin-top: 10px;
+  color: purple;
+}
+
+ul.parameters {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+ul.parameters > li {
+  margin-top: 5px;
+}
+
 h3.name_header {
   display:none;
 }
 
 li.function p.name {
   color: green;
-}
-
-/* SOURCE FIELD */
-
-h2#source {
-  color: purple;
-  display: inline;
-  line-height: 60px;
-  vertical-align: bottom;
-}
-
-h2#source:after {
-  content: ':'
-}
-
-h2#source + p.source {
-  display: inline;
-  line-height: 60px;
-  vertical-align: bottom;
 }
