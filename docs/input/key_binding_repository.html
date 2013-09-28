@@ -29,6 +29,21 @@
     </h2>
     <ul class='functions'>
       <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          registerEvent
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Creates a new binding entry with the specified name and the given     defaults. Use NULL to specify no initial mapping. The parameter     event will be returned when a key is translated.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
           <li class='parameter'>
             name
@@ -43,14 +58,23 @@
             secondary
           </li>
         </ul>
-        <p class='name'>
-          registerEvent
-        </p>
-        <p class='description'>
-          Creates a new binding entry with the specified name and the given     defaults. Use NULL to specify no initial mapping. The parameter     event will be returned when a key is translated.
-        </p>
       </li>
       <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          rebindPrimary
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Rebinds a key combination to the primary binding of the given event.     The event must have been registered by registerEvent().
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
           <li class='parameter'>
             name
@@ -59,14 +83,23 @@
             primary
           </li>
         </ul>
-        <p class='name'>
-          rebindPrimary
-        </p>
-        <p class='description'>
-          Rebinds a key combination to the primary binding of the given event.     The event must have been registered by registerEvent().
-        </p>
       </li>
       <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          rebindSecondary
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Rebinds a key combination to the secondary binding of the given     event. The event must have been registered by registerEvent().
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
           <li class='parameter'>
             name
@@ -75,14 +108,23 @@
             secondary
           </li>
         </ul>
-        <p class='name'>
-          rebindSecondary
-        </p>
-        <p class='description'>
-          Rebinds a key combination to the secondary binding of the given     event. The event must have been registered by registerEvent().
-        </p>
       </li>
       <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          yieldEvent
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Determines the event identifier that corresponds to the given key   binding. Returns true if the binding was resolved.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
           <li class='parameter'>
             binding
@@ -91,12 +133,6 @@
             event
           </li>
         </ul>
-        <p class='name'>
-          yieldEvent
-        </p>
-        <p class='description'>
-          Determines the event identifier that corresponds to the given key   binding. Returns true if the binding was resolved.
-        </p>
       </li>
     </ul>
   </body>

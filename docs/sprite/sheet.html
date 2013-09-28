@@ -29,29 +29,62 @@
     </h2>
     <ul class='functions'>
       <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          load
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
           <li class='parameter'>
             filename
           </li>
         </ul>
-        <p class='name'>
-          load
-        </p>
-        <p class='description'>
-          
-        </p>
       </li>
       <li class='function'>
-        <ul class='parameters'>
-        </ul>
+        <h3 class='name_header'>
+          Name
+        </h3>
         <p class='name'>
           texture
         </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
         <p class='description'>
           Returns: The Texture for this SpriteSheet.
         </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+        </ul>
       </li>
       <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          textureCoordinates
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Fills the given coordinate array with the texture coordinates of the     given sprite. The sprite index is assigned by the order in which     sprites are listed in the description file.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
           <li class='parameter'>
             index
@@ -60,14 +93,23 @@
             coords
           </li>
         </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
         <p class='name'>
           textureCoordinates
         </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
         <p class='description'>
-          Fills the given coordinate array with the texture coordinates of the     given sprite. The sprite index is assigned by the order in which     sprites are listed in the description file.
+          Fills the given coordinate array with the texture coordinates of the     given sprite. The sprite is located by comparing the name given     with the one described by the description file.   Returns: true when the sprite is found, false otherwise.
         </p>
-      </li>
-      <li class='function'>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
           <li class='parameter'>
             name
@@ -76,60 +118,105 @@
             coords
           </li>
         </ul>
-        <p class='name'>
-          textureCoordinates
-        </p>
-        <p class='description'>
-          Fills the given coordinate array with the texture coordinates of the     given sprite. The sprite is located by comparing the name given     with the one described by the description file.   Returns: true when the sprite is found, false otherwise.
-        </p>
       </li>
       <li class='function'>
-        <ul class='parameters'>
-        </ul>
+        <h3 class='name_header'>
+          Name
+        </h3>
         <p class='name'>
           count
         </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
         <p class='description'>
           Returns: the number of sprites contained in the sheet.
         </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+        </ul>
       </li>
       <li class='function'>
-        <ul class='parameters'>
-          <li class='parameter'>
-            index
-          </li>
-        </ul>
+        <h3 class='name_header'>
+          Name
+        </h3>
         <p class='name'>
           width
         </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
         <p class='description'>
           Returns the width of the sprite at the given index.
         </p>
-      </li>
-      <li class='function'>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
           <li class='parameter'>
             index
           </li>
         </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
         <p class='name'>
           height
         </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
         <p class='description'>
           Returns the height of the sprite at the given index.
         </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            index
+          </li>
+        </ul>
       </li>
       <li class='function'>
-        <ul class='parameters'>
-        </ul>
+        <h3 class='name_header'>
+          Name
+        </h3>
         <p class='name'>
           id
         </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
         <p class='description'>
           Returns the id of this sprite sheet in the system.
         </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+        </ul>
       </li>
       <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          enumerateSprites
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns: -1 when no more sprites match, or the index     of the next available sprite that matches the wildcard     given by name. For instance wildcard = "down_*" will yield     the next sprite after or including the index at last     that begins with "down_". Use last = 0 to start, and     then pass the return value + 1 in the next invocation.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
           <li class='parameter'>
             wildcard
@@ -138,14 +225,23 @@
             last
           </li>
         </ul>
-        <p class='name'>
-          enumerateSprites
-        </p>
-        <p class='description'>
-          Returns: -1 when no more sprites match, or the index     of the next available sprite that matches the wildcard     given by name. For instance wildcard = "down_*" will yield     the next sprite after or including the index at last     that begins with "down_". Use last = 0 to start, and     then pass the return value + 1 in the next invocation.
-        </p>
       </li>
       <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          draw
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Draws the given sprite at the given location.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
           <li class='parameter'>
             index
@@ -160,12 +256,6 @@
             model
           </li>
         </ul>
-        <p class='name'>
-          draw
-        </p>
-        <p class='description'>
-          Draws the given sprite at the given location.
-        </p>
       </li>
     </ul>
   </body>

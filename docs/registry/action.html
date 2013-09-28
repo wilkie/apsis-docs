@@ -29,55 +29,106 @@
     </h2>
     <ul class='functions'>
       <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          load
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Loads a JSON bindings description that will load default bindings   for a set of actions.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
           <li class='parameter'>
             path
           </li>
         </ul>
-        <p class='name'>
-          load
-        </p>
-        <p class='description'>
-          Loads a JSON bindings description that will load default bindings   for a set of actions.
-        </p>
       </li>
       <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          id
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Registers or returns the action for the given name.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
           <li class='parameter'>
             name
           </li>
         </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
         <p class='name'>
           id
         </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
         <p class='description'>
-          Registers or returns the action for the given name.
+          Returns the Action by the given index.
         </p>
-      </li>
-      <li class='function'>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
           <li class='parameter'>
             id
           </li>
         </ul>
-        <p class='name'>
-          id
-        </p>
-        <p class='description'>
-          Returns the Action by the given index.
-        </p>
       </li>
       <li class='function'>
-        <ul class='parameters'>
-        </ul>
+        <h3 class='name_header'>
+          Name
+        </h3>
         <p class='name'>
           count
         </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
         <p class='description'>
           Returns the number of actions in the system.
         </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+        </ul>
       </li>
       <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          yield
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Yields the action triggered by the given key binding. Returns true   when a binding yields an event. In this case, action_id will be set   to the id of the action.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
           <li class='parameter'>
             binding
@@ -86,108 +137,183 @@
             action_id
           </li>
         </ul>
-        <p class='name'>
-          yield
-        </p>
-        <p class='description'>
-          Yields the action triggered by the given key binding. Returns true   when a binding yields an event. In this case, action_id will be set   to the id of the action.
-        </p>
       </li>
       <li class='function'>
-        <ul class='parameters'>
-          <li class='parameter'>
-            binding
-          </li>
-        </ul>
+        <h3 class='name_header'>
+          Name
+        </h3>
         <p class='name'>
           bindPrimary
         </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
         <p class='description'>
           Binds the given key binding as the primary means of activating this   action.
         </p>
-      </li>
-      <li class='function'>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
           <li class='parameter'>
             binding
           </li>
         </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
         <p class='name'>
           bindSecondary
         </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
         <p class='description'>
           Binds the given key binding as the secondary means of activating this   action.
         </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            binding
+          </li>
+        </ul>
       </li>
       <li class='function'>
-        <ul class='parameters'>
-        </ul>
+        <h3 class='name_header'>
+          Name
+        </h3>
         <p class='name'>
           primary
         </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
         <p class='description'>
           Returns the primary key binding for this action.
         </p>
-      </li>
-      <li class='function'>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
         </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
         <p class='name'>
           secondary
         </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
         <p class='description'>
           Returns the secondary key binding for this action. If there is no   primary, this will actually set the primary binding.
         </p>
-      </li>
-      <li class='function'>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
         </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
         <p class='name'>
           bindingCount
         </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
         <p class='description'>
           Returns the number of bindings that will trigger this action.
         </p>
-      </li>
-      <li class='function'>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
         </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
         <p class='name'>
           clearPrimary
         </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
         <p class='description'>
           Clears the primary binding for this action.
         </p>
-      </li>
-      <li class='function'>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
         </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
         <p class='name'>
           clearSecondary
         </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
         <p class='description'>
           Clears the secondary binding for this action.
         </p>
-      </li>
-      <li class='function'>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
         </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
         <p class='name'>
           clear
         </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
         <p class='description'>
           Clears all bindings for this action.
         </p>
-      </li>
-      <li class='function'>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
         <ul class='parameters'>
         </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
         <p class='name'>
           id
         </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
         <p class='description'>
           Returns the unique identifier for this Action within the system.
         </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+        </ul>
       </li>
     </ul>
   </body>
