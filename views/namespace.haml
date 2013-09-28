@@ -1,5 +1,8 @@
 %h1#namespace
-  #{prefix} Namespace #{name}
+  %span.prefix
+    #{prefix}
+  %span.name
+    #{name}
 
 - unless namespaces.empty?
   %h2#namespaces
