@@ -6,6 +6,7 @@ module Documentor
     attr_reader :functions
     attr_reader :comment
     attr_reader :file
+    attr_reader :image
 
     def initialize(options = {})
       @name       = options[:name]       || ""
@@ -14,6 +15,7 @@ module Documentor
       @functions  = options[:functions]  || []
       @comment    = options[:comment]
       @file       = options[:file]
+      @image      = options[:image]
     end
 
     def <=>(b)

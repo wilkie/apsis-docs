@@ -6,11 +6,13 @@ module Documentor
     attr_reader :comment
     attr_reader :name
     attr_reader :file
+    attr_reader :image
 
     def initialize(options = {})
       @namespaces = options[:namespaces] || []
       @classes    = options[:classes]    || []
       @functions  = options[:functions]  || []
+      @image      = options[:image]
       @comment    = nil
       @file       = nil
       @name       = "{root}"
