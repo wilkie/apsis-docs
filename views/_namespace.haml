@@ -1,4 +1,6 @@
 %li.namespace
+  - if namespace.image
+    %img.image{:src => "#{file_prefix}../#{namespace.image}"}
   %h3.name_header
     Name
   %a.name{:href => "#{file_prefix}namespaces/#{namespace.safe_path_from_module_name(prefix)}.html"}

@@ -30,9 +30,11 @@ module Documentor
 
       file = old_root.file
       comment = old_root.comment
+      image = old_root.image
 
       if root.comment and root.comment != ""
         file = root.file
+        image = old_root.image
         comment = root.comment
       end
 
@@ -66,6 +68,7 @@ module Documentor
                            :functions  => functions,
                            :name       => root.name,
                            :comment    => comment,
+                           :image      => image,
                            :file       => file)
 
       if old_root == @root

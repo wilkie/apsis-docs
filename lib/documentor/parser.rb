@@ -29,7 +29,7 @@ module Documentor
 
     private
 
-    def _curse(cursor)
+    def _curse(cursor, prefix = "")
       # We want to build up information about what is contained within this
       # scope. We are parsing a class, for instance, so we want to know what
       # functions it defines. At the end of this function, we will build a
@@ -50,32 +50,53 @@ module Documentor
       # Get the name of this object (class name, namespace name, method name)
       name = cursor.spelling
 
+      new_prefix = prefix
+      case cursor.kind
+      when :cursor_namespace,
+           :cursor_class_decl
+        new_prefix = "#{prefix}#{name}::"
+      end
+
       # Collect child information
       cursor.visit_children do |sub_cursor, parent|
         if parent == cursor
           case sub_cursor.kind
           when :cursor_namespace
-            namespaces << _curse(sub_cursor)
+            namespaces << _curse(sub_cursor, new_prefix)
           when :cursor_class_decl
             if sub_cursor.public?
-              classes << _curse(sub_cursor)
+              classes << _curse(sub_cursor, new_prefix)
             end
           when :cursor_cxx_method
             if sub_cursor.public?
-              functions << _curse(sub_cursor)
+              functions << _curse(sub_cursor, new_prefix)
             end
           end
         end
         :recurse
       end
 
+      # Image path
+      image = nil
+
       # Select the object type to add to our tree
       object = case cursor.kind
                when :cursor_translation_unit
                  Documentor::Root
                when :cursor_namespace
+                 tmp_ns = Documentor::Namespace.new(:name => name)
+                 img_path = "img/namespaces/#{tmp_ns.safe_path_from_module_name(prefix)}.svg"
+                 if File.exists?(img_path)
+                   image = img_path
+                 end
+
                  Documentor::Namespace
                when :cursor_class_decl
+                 img_path = "img/#{@relative_path.gsub(/#{Regexp.escape(File.extname(@relative_path))}$/, ".svg")}"
+                 if File.exists?(img_path)
+                   image = img_path
+                 end
+
                  Documentor::Class
                when :cursor_cxx_method
                  # Retrieve arguments
@@ -103,6 +124,7 @@ module Documentor
                    :classes    => classes,
                    :functions  => functions,
                    :parameters => parameters,
+                   :image      => image,
                    :file       => @relative_path)
       end
     end
