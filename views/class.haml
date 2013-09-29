@@ -4,7 +4,10 @@
 
   %h1#class
     %span.prefix
-      #{prefix}
+      - if prefix == ""
+        Project Root
+      - else
+        #{prefix}
     %span.name
       #{name}
 
