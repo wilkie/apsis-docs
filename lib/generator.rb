@@ -52,7 +52,8 @@ class Generator
                                           :classes => root.classes.sort,
                                           :functions => root.functions.sort)
 
-      content = @layout.render(self, :title => "Class #{prefix}#{root.name}") do
+      content = @layout.render(self, :title => "Class #{prefix}#{root.name}",
+                                     :file_prefix => "/apsis-docs/docs/") do
                   class_content
                 end
 
@@ -85,7 +86,8 @@ class Generator
                                                   :classes => root.classes.sort,
                                                   :functions => root.functions.sort)
 
-      content = @layout.render(self, :title => "Namespace #{prefix}#{root.name}") do
+      content = @layout.render(self, :title => "Namespace #{prefix}#{root.name}",
+                                     :file_prefix => "/apsis-docs/docs/") do
                   namespace_content
                 end
 

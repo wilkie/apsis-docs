@@ -17,7 +17,8 @@ generator.output "docs", collection.root
 
 markdown = File.open("index.md").read
 
-content = Tilt.new("views/layout.haml").render(nil, :title => "Apsis Project") do
+content = Tilt.new("views/layout.haml").render(nil, :title => "Apsis Project",
+                                                    :file_prefix => "/apsis-docs/docs/") do
   Tilt.new("views/index.haml").render(nil, :content => markdown)
 end
 
