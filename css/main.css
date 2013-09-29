@@ -1,6 +1,5 @@
 body {
   background-color: #e0e0e0;
-  margin: 10px;
 }
 
 h1 {
@@ -26,7 +25,15 @@ p, a {
   font-size: 16px;
 }
 
-/* IMAGE */
+/* HEADER */
+
+header {
+  background-color: #eee;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+/* HEADER IMAGE */
 
 img#image {
   width: 48px;
@@ -39,7 +46,7 @@ img#image + h1 + * {
   clear: both;
 }
 
-/* HEADER */
+/* HEADER TITLE */
 
 h1 span.prefix {
   display: block;
