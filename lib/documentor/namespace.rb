@@ -29,7 +29,11 @@ module Documentor
 
     def safe_path_from_module_name(prefix)
       full_name = "#{prefix}#{@name}"
-      full_name.gsub /\:\:/, "/"
+      full_name.gsub! /\:\:/, "/"
+      full_name.gsub! /(\/|^)[A-Z]/ do |m|
+        "#{m.downcase}"
+      end
+      full_name
     end
   end
 end

@@ -32,11 +32,21 @@ class Generator
       root.namespaces.each{|e| output(to, e, "#{prefix}")}
       root.classes.each{|e| output(to, e, prefix)}
 
+      # Find image, or use the one in documentor
+      image = root.image
+
+      unless image
+        path = "img/#{root.file.gsub(/#{Regexp.escape(File.extname(root.file))}$/, ".svg")}"
+        if File.exists?(path)
+          image = path
+        end
+      end
+
       class_content = @class.render(self, :prefix => prefix,
                                           :file_prefix => "/apsis-docs/docs/",
                                           :name => root.name,
                                           :file => root.file,
-                                          :image => root.image,
+                                          :image => image,
                                           :comment => root.comment,
                                           :namespaces => root.namespaces.sort,
                                           :classes => root.classes.sort,
@@ -55,11 +65,21 @@ class Generator
       root.namespaces.each{|e| output(to, e, "#{prefix}#{root.name}::")}
       root.classes.each{|e| output(to, e, "#{prefix}#{root.name}::")}
 
+      # Find image, or use the one in documentor
+      image = root.image
+
+      unless image
+        path = "img/namespaces/#{root.safe_path_from_module_name(prefix)}.svg"
+        if File.exists?(path)
+          image = path
+        end
+      end
+
       namespace_content = @namespace.render(self, :prefix => prefix,
                                                   :file_prefix => "/apsis-docs/docs/",
                                                   :name => root.name,
                                                   :file => root.file,
-                                                  :image => root.image,
+                                                  :image => image,
                                                   :comment => root.comment,
                                                   :namespaces => root.namespaces.sort,
                                                   :classes => root.classes.sort,
