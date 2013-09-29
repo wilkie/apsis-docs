@@ -1,11 +1,12 @@
-- if image
-  %img#image{:src => "#{file_prefix}../#{image}"}
+%header
+  - if image
+    %img#image{:src => "#{file_prefix}../#{image}"}
 
-%h1#namespace
-  %span.prefix
-    #{prefix}
-  %span.name
-    #{name}
+  %h1#namespace
+    %span.prefix
+      #{prefix}
+    %span.name
+      #{name}
 
 - unless namespaces.empty?
   %h2#namespaces
