@@ -26,6 +26,19 @@ p, a {
   font-size: 16px;
 }
 
+/* IMAGE */
+
+img#image {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  float: left;
+}
+
+img#image + h1 + * {
+  clear: both;
+}
+
 /* HEADER */
 
 h1 span.prefix {
