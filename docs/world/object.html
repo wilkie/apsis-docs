@@ -38,13 +38,13 @@
           Name
         </h3>
         <p class='name'>
-          get
+          addCollision
         </p>
         <h3 class='description_header'>
           Description
         </h3>
         <p class='description'>
-          Returns the value stored at the given property.
+          Adds the given CollisionObject at the specified fraction of movement.
         </p>
         <h3 class='parameters_header'>
           Parameters
@@ -55,7 +55,33 @@
               Name
             </h3>
             <p class='name'>
-              key
+              period
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              collisionObject
             </p>
             <h3 class='type_header'>
               Type
@@ -83,13 +109,57 @@
           Name
         </h3>
         <p class='name'>
-          get
+          clearCollisions
         </p>
         <h3 class='description_header'>
           Description
         </h3>
         <p class='description'>
-          Returns the value stored at the given property.
+          Clears the list of pending collisions.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <p class='no_parameters'>
+          None
+        </p>
+        <ul class='parameters'>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          collisionCount
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns the number of collisions.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <p class='no_parameters'>
+          None
+        </p>
+        <ul class='parameters'>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          collisionObject
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns the CollisionObject at the specified index.
         </p>
         <h3 class='parameters_header'>
           Parameters
@@ -100,7 +170,7 @@
               Name
             </h3>
             <p class='name'>
-              key
+              index
             </p>
             <h3 class='type_header'>
               Type
@@ -128,13 +198,13 @@
           Name
         </h3>
         <p class='name'>
-          has
+          collisionPeriod
         </p>
         <h3 class='description_header'>
           Description
         </h3>
         <p class='description'>
-          Returns true when the value at the given property is stored.
+          Returns the period during movement that the collision took place   given by the specified index.
         </p>
         <h3 class='parameters_header'>
           Parameters
@@ -145,7 +215,7 @@
               Name
             </h3>
             <p class='name'>
-              key
+              index
             </p>
             <h3 class='type_header'>
               Type
@@ -173,1426 +243,21 @@
           Name
         </h3>
         <p class='name'>
-          has
+          dequeueEvent
         </p>
         <h3 class='description_header'>
           Description
         </h3>
         <p class='description'>
-          Returns true when the value at the given property is stored.
+          Dequeues the next event that the Object must respond to.
         </p>
         <h3 class='parameters_header'>
           Parameters
         </h3>
+        <p class='no_parameters'>
+          None
+        </p>
         <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              key
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          set
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Sets the given property to the given value.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              key
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              value
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          set
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Sets the given property to the given value.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              key
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              value
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          set
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Sets the given property to the given value.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              key
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              string
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          set
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Sets the given property to the given value.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              key
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              value
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          set
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Sets the given property to the given value.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              key
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              value
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          set
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Sets the given property to the given value.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              key
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              value
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          getForEvent
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Returns the value stored at the given property.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              event_id
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              key
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          getForEvent
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Returns the value stored at the given property.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              event_id
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              key
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          hasForEvent
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Returns true when the value at the given property is stored.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              event_id
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              key
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          hasForEvent
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Returns true when the value at the given property is stored.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              event_id
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              key
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          setForEvent
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Sets the given property to the given value.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              event_id
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              key
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              value
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          setForEvent
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Sets the given property to the given value.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              event_id
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              key
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              value
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          setForEvent
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Sets the given property to the given value.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              event_id
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              key
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              string
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          setForEvent
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Sets the given property to the given value.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              event_id
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              key
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              value
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          setForEvent
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Sets the given property to the given value.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              event_id
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              key
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              value
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          setForEvent
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Sets the given property to the given value.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              event_id
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              key
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              value
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          isEnabled
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Returns whether or not the object has the given state.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              state
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          enableState
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Applies the given state to this object.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              state
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
         </ul>
       </li>
       <li class='function'>
@@ -1645,13 +310,13 @@
           Name
         </h3>
         <p class='name'>
-          toggleState
+          enableState
         </p>
         <h3 class='description_header'>
           Description
         </h3>
         <p class='description'>
-          Toggles the given state for this object. Returns the new   state
+          Applies the given state to this object.
         </p>
         <h3 class='parameters_header'>
           Parameters
@@ -1780,13 +445,103 @@
           Name
         </h3>
         <p class='name'>
-          respondTo
+          get
         </p>
         <h3 class='description_header'>
           Description
         </h3>
         <p class='description'>
-          Adds the given event as something this Object responds to by either   its event id or the string name of the event.
+          Returns the value stored at the given property.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          get
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns the value stored at the given property.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          getForEvent
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns the value stored at the given property.
         </p>
         <h3 class='parameters_header'>
           Parameters
@@ -1818,6 +573,32 @@
               default
             </p>
           </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
         </ul>
       </li>
       <li class='function'>
@@ -1825,7 +606,332 @@
           Name
         </h3>
         <p class='name'>
-          respondTo
+          getForEvent
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns the value stored at the given property.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              event_id
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          has
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns true when the value at the given property is stored.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          has
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns true when the value at the given property is stored.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          hasEvents
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns whether or not the Object has pending events.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <p class='no_parameters'>
+          None
+        </p>
+        <ul class='parameters'>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          hasForEvent
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns true when the value at the given property is stored.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              event_id
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          hasForEvent
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns true when the value at the given property is stored.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              event_id
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          ignore
         </p>
         <h3 class='description_header'>
           Description
@@ -1915,7 +1021,187 @@
           Name
         </h3>
         <p class='name'>
-          ignore
+          isEnabled
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns whether or not the object has the given state.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              state
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          isMe
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns true if the given Object is this Object.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              reference
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          respondTo
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              event
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          respondTo
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Adds the given event as something this Object responds to by either   its event id or the string name of the event.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              event_id
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          respondsTo
         </p>
         <h3 class='description_header'>
           Description
@@ -2005,13 +1291,13 @@
           Name
         </h3>
         <p class='name'>
-          respondsTo
+          set
         </p>
         <h3 class='description_header'>
           Description
         </h3>
         <p class='description'>
-          
+          Sets the given property to the given value.
         </p>
         <h3 class='parameters_header'>
           Parameters
@@ -2022,7 +1308,33 @@
               Name
             </h3>
             <p class='name'>
-              event
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              value
             </p>
             <h3 class='type_header'>
               Type
@@ -2050,57 +1362,13 @@
           Name
         </h3>
         <p class='name'>
-          dequeueEvent
+          set
         </p>
         <h3 class='description_header'>
           Description
         </h3>
         <p class='description'>
-          Dequeues the next event that the Object must respond to.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <p class='no_parameters'>
-          None
-        </p>
-        <ul class='parameters'>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          hasEvents
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Returns whether or not the Object has pending events.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <p class='no_parameters'>
-          None
-        </p>
-        <ul class='parameters'>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          isMe
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Returns true if the given Object is this Object.
+          Sets the given property to the given value.
         </p>
         <h3 class='parameters_header'>
           Parameters
@@ -2111,7 +1379,33 @@
               Name
             </h3>
             <p class='name'>
-              reference
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              value
             </p>
             <h3 class='type_header'>
               Type
@@ -2139,13 +1433,13 @@
           Name
         </h3>
         <p class='name'>
-          addCollision
+          set
         </p>
         <h3 class='description_header'>
           Description
         </h3>
         <p class='description'>
-          Adds the given CollisionObject at the specified fraction of movement.
+          Sets the given property to the given value.
         </p>
         <h3 class='parameters_header'>
           Parameters
@@ -2156,7 +1450,7 @@
               Name
             </h3>
             <p class='name'>
-              period
+              key
             </p>
             <h3 class='type_header'>
               Type
@@ -2182,52 +1476,7 @@
               Name
             </h3>
             <p class='name'>
-              collisionObject
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          collisionObject
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Returns the CollisionObject at the specified index.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              index
+              value
             </p>
             <h3 class='type_header'>
               Type
@@ -2255,13 +1504,13 @@
           Name
         </h3>
         <p class='name'>
-          collisionPeriod
+          set
         </p>
         <h3 class='description_header'>
           Description
         </h3>
         <p class='description'>
-          Returns the period during movement that the collision took place   given by the specified index.
+          Sets the given property to the given value.
         </p>
         <h3 class='parameters_header'>
           Parameters
@@ -2272,7 +1521,33 @@
               Name
             </h3>
             <p class='name'>
-              index
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              value
             </p>
             <h3 class='type_header'>
               Type
@@ -2300,21 +1575,70 @@
           Name
         </h3>
         <p class='name'>
-          collisionCount
+          set
         </p>
         <h3 class='description_header'>
           Description
         </h3>
         <p class='description'>
-          Returns the number of collisions.
+          Sets the given property to the given value.
         </p>
         <h3 class='parameters_header'>
           Parameters
         </h3>
-        <p class='no_parameters'>
-          None
-        </p>
         <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              value
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
         </ul>
       </li>
       <li class='function'>
@@ -2322,21 +1646,697 @@
           Name
         </h3>
         <p class='name'>
-          clearCollisions
+          set
         </p>
         <h3 class='description_header'>
           Description
         </h3>
         <p class='description'>
-          Clears the list of pending collisions.
+          Sets the given property to the given value.
         </p>
         <h3 class='parameters_header'>
           Parameters
         </h3>
-        <p class='no_parameters'>
-          None
-        </p>
         <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              string
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          setForEvent
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Sets the given property to the given value.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              event_id
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              value
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          setForEvent
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Sets the given property to the given value.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              event_id
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              value
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          setForEvent
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Sets the given property to the given value.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              event_id
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              value
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          setForEvent
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Sets the given property to the given value.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              event_id
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              value
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          setForEvent
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Sets the given property to the given value.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              event_id
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              string
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          setForEvent
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Sets the given property to the given value.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              event_id
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              key
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              value
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          toggleState
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Toggles the given state for this object. Returns the new   state
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              state
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
         </ul>
       </li>
       <li class='function'>

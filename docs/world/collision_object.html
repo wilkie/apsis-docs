@@ -38,160 +38,6 @@
           Name
         </h3>
         <p class='name'>
-          objectType
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Returns the type of collision object.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <p class='no_parameters'>
-          None
-        </p>
-        <ul class='parameters'>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          collisionType
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Returns the type of collision that occured.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <p class='no_parameters'>
-          None
-        </p>
-        <ul class='parameters'>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          direction
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Returns the direction the colliding object is going to hit this   object.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <p class='no_parameters'>
-          None
-        </p>
-        <ul class='parameters'>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          redirection
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Returns the redirection vector that should be followed as a result   of this collision.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <p class='no_parameters'>
-          None
-        </p>
-        <ul class='parameters'>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          edge
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Returns the edge that was hit upon the collision.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <p class='no_parameters'>
-          None
-        </p>
-        <ul class='parameters'>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          point
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Returns the point that was hit upon the collision.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <p class='no_parameters'>
-          None
-        </p>
-        <ul class='parameters'>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
-          repositionPoint
-        </p>
-        <h3 class='description_header'>
-          Description
-        </h3>
-        <p class='description'>
-          Returns the point the object that hit should be positioned in order   to rest touching the collision object.
-        </p>
-        <h3 class='parameters_header'>
-          Parameters
-        </h3>
-        <p class='no_parameters'>
-          None
-        </p>
-        <ul class='parameters'>
-        </ul>
-      </li>
-      <li class='function'>
-        <h3 class='name_header'>
-          Name
-        </h3>
-        <p class='name'>
           actor
         </p>
         <h3 class='description_header'>
@@ -363,13 +209,13 @@
           Name
         </h3>
         <p class='name'>
-          tile
+          collideEvent
         </p>
         <h3 class='description_header'>
           Description
         </h3>
         <p class='description'>
-          Returns the Tile object that resulted in this collision.
+          Returns the collided_with_* event that corresponds to this   object.
         </p>
         <h3 class='parameters_header'>
           Parameters
@@ -385,148 +231,65 @@
           Name
         </h3>
         <p class='name'>
-          tile
+          collisionType
         </p>
         <h3 class='description_header'>
           Description
         </h3>
         <p class='description'>
-          Sets this collision object to reflect the given Tile.
+          Returns the type of collision that occured.
         </p>
         <h3 class='parameters_header'>
           Parameters
         </h3>
+        <p class='no_parameters'>
+          None
+        </p>
         <ul class='parameters'>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              value
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              edge
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              point
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              effect
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
-          <li class='parameter'>
-            <h3 class='name_header'>
-              Name
-            </h3>
-            <p class='name'>
-              direction
-            </p>
-            <h3 class='type_header'>
-              Type
-            </h3>
-            <p class='type'>
-              int
-            </p>
-            <h3 class='description_header'>
-              Description
-            </h3>
-            <p class='description'>
-              Meh
-            </p>
-            <h3 class='default'>
-              Default
-            </h3>
-            <p class='default'>
-              default
-            </p>
-          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          direction
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns the direction the colliding object is going to hit this   object.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <p class='no_parameters'>
+          None
+        </p>
+        <ul class='parameters'>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          edge
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns the edge that was hit upon the collision.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <p class='no_parameters'>
+          None
+        </p>
+        <ul class='parameters'>
         </ul>
       </li>
       <li class='function'>
@@ -705,13 +468,250 @@
           Name
         </h3>
         <p class='name'>
-          collideEvent
+          objectType
         </p>
         <h3 class='description_header'>
           Description
         </h3>
         <p class='description'>
-          Returns the collided_with_* event that corresponds to this   object.
+          Returns the type of collision object.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <p class='no_parameters'>
+          None
+        </p>
+        <ul class='parameters'>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          point
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns the point that was hit upon the collision.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <p class='no_parameters'>
+          None
+        </p>
+        <ul class='parameters'>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          redirection
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns the redirection vector that should be followed as a result   of this collision.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <p class='no_parameters'>
+          None
+        </p>
+        <ul class='parameters'>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          repositionPoint
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns the point the object that hit should be positioned in order   to rest touching the collision object.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <p class='no_parameters'>
+          None
+        </p>
+        <ul class='parameters'>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          tile
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Sets this collision object to reflect the given Tile.
+        </p>
+        <h3 class='parameters_header'>
+          Parameters
+        </h3>
+        <ul class='parameters'>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              value
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              edge
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              point
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              effect
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+          <li class='parameter'>
+            <h3 class='name_header'>
+              Name
+            </h3>
+            <p class='name'>
+              direction
+            </p>
+            <h3 class='type_header'>
+              Type
+            </h3>
+            <p class='type'>
+              int
+            </p>
+            <h3 class='description_header'>
+              Description
+            </h3>
+            <p class='description'>
+              Meh
+            </p>
+            <h3 class='default'>
+              Default
+            </h3>
+            <p class='default'>
+              default
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class='function'>
+        <h3 class='name_header'>
+          Name
+        </h3>
+        <p class='name'>
+          tile
+        </p>
+        <h3 class='description_header'>
+          Description
+        </h3>
+        <p class='description'>
+          Returns the Tile object that resulted in this collision.
         </p>
         <h3 class='parameters_header'>
           Parameters
