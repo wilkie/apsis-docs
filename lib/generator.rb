@@ -5,17 +5,19 @@ class Generator
     @layout    = Tilt.new(options[:layout])
     @class     = Tilt.new(options[:class])
     @namespace = Tilt.new(options[:namespace])
+    @prefixes  = []
   end
 
   def partial(page, options = {})
     Tilt.new("views/_#{page}.haml").render(self, options[:locals].merge(
-                                                   :prefix      => @prefix,
+                                                   :prefix      => @prefixes[-1],
                                                    :file_prefix => "/apsis-docs/docs/"
                                                  ))
   end
 
   def output(to, root, prefix = "")
-    @prefix = prefix
+    prefix = prefix.dup
+    @prefixes << "#{prefix}#{root.name}::"
 
     case root
     when Documentor::Root
@@ -79,5 +81,7 @@ class Generator
       end
     when Documentor::Function
     end
+
+    @prefixes.pop
   end
 end
