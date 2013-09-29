@@ -99,12 +99,15 @@ h2#namespaces {
   color: blue;
 }
 
+ul.namespaces {
+}
+
 ul.namespaces > li {
   border-bottom: 1px solid #aaa;
   margin-top: 11px;
   padding: 5px;
   background-color: #eee;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 ul.namespaces > li > h3.name_header,
@@ -120,6 +123,20 @@ li.namespace > img.image {
   height: 100%;
 }
 
+li.namespace > p,
+li.namespace > a {
+}
+
+li.namespace > p {
+  margin-top: 5px;
+}
+
+li.namespace > .name {
+  color: blue;
+  text-decoration: none;
+  font-size: 19px;
+}
+
 /* CLASSES SECTION */
 
 h2#classes {
@@ -131,7 +148,7 @@ ul.classes > li {
   margin-top: 11px;
   padding: 5px;
   background-color: #eee;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 ul.classes > li > h3.name_header,
@@ -145,6 +162,21 @@ li.class > img.image {
   margin-right: 10px;
   float: left;
   height: 100%;
+}
+
+li.class > p,
+li.class > a {
+  text-decoration: none;
+}
+
+li.class > p {
+  margin-top: 5px;
+}
+
+li.class > .name {
+  color: red;
+  text-decoration: none;
+  font-size: 19px;
 }
 
 /* FUNCTIONS SECTION */
@@ -176,7 +208,7 @@ h3.name_header {
 
 li.function > p.name {
   color: green;
-  font-size: 18px;
+  font-size: 19px;
 }
 
 ul.functions > li > h3.description_header {
