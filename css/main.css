@@ -101,6 +101,14 @@ ul.namespaces > li > h3.description_header {
   display: none;
 }
 
+li.namespace > img.image {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  float: left;
+  height: 100%;
+}
+
 /* CLASSES SECTION */
 
 h2#classes {
@@ -118,6 +126,14 @@ ul.classes > li {
 ul.classes > li > h3.name_header,
 ul.classes > li > h3.description_header {
   display: none;
+}
+
+li.class > img.image {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  float: left;
+  height: 100%;
 }
 
 /* FUNCTIONS SECTION */
